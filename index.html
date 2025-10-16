@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Programação</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+  <div class="container">
+
+    <!-- TELA DE CATEGORIAS -->
+    <div id="category-screen">
+      <h1>Escolha uma categoria</h1>
+      <div class="category-buttons">
+        <button class="category-btn" data-category="HTML">HTML</button>
+        <button class="category-btn" data-category="CSS">CSS</button>
+        <button class="category-btn" data-category="JavaScript">JavaScript</button>
+        <button class="category-btn" data-category="Banco de Dados">Banco de Dados</button>
+      </div>
+    </div>
+
+    <!-- TELA DO QUIZ -->
+    <div id="quiz-screen" style="display:none;">
+      <h2 id="question"></h2>
+      <div id="answers"></div>
+      <button id="next-btn">Próxima</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

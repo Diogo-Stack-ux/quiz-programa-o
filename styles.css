@@ -1,0 +1,142 @@
+/* ==========================
+   RESET E ESTILO BASE
+   ========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ==========================
+   TELA DE CATEGORIAS
+   ========================== */
+#category-screen h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #2563eb;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.category-btn {
+  flex: 1 1 45%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.category-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* ==========================
+   TELA DO QUIZ
+   ========================== */
+#quiz-screen h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#answers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e5e7eb;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn:hover {
+  background: #d1d5db;
+  transform: scale(1.02);
+}
+
+/* Cores de resposta */
+.btn.correct {
+  background: #22c55e !important;
+  color: #fff;
+}
+
+.btn.wrong {
+  background: #ef4444 !important;
+  color: #fff;
+}
+
+/* Botão próxima */
+#next-btn {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+  transition: transform 0.2s, background 0.2s;
+}
+
+#next-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.03);
+}
+
+/* ==========================
+   BARRA DE PROGRESSO
+   ========================== */
+#progress-bar {
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#progress-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
